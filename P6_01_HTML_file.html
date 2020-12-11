@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>The Vegetable Battle</title>
+    <link rel="stylesheet" href="P6_02_CSS_file.css" />
+    <link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">  
+      <script src="http://code.jquery.com/jquery-1.10.2.js"></script>  
+      <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>  
+</head>
+
+<body>
+    <h3 id="header" style="text-align: center; color: green">The Vegetable Battle: <span id = "player-turn"></span></h3>
+    <h3 id = "points" style="text-align: center; color: green">Life points: 
+        <span id="life-points" style="text-align: center; color: blue">100</span>
+         <span id="life-points2" style="text-align: center; color: orange">100</span>
+         <label class="switch">
+             <input type="checkbox" id="player1-defend">
+             <div class="slider round">
+                <span class="on">Defend</span>
+                <span class="off">Attack</span>
+            </div></label>
+         <label class="switch">
+            <input type="checkbox" disabled id="player2-defend">
+            <div class="slider round slider-color">
+                <span class="on">Defend</span>
+                <span class="off">Attack</span>
+            </div></label>
+        </h3> 
+    <script src="https://code.jquery.com/jquery-1.12.3.js"
+        integrity="sha256-1XMpEtA4eKXNNpXcJ1pmMPs8JV+nwLdEqwiJeCQEkyc=" crossorigin="anonymous">
+    </script>
+    <div id="container" style="text-align: center">
+    </div>
+    <script src="P6_03_JS.js"></script>
+</body>
+
+</html>
