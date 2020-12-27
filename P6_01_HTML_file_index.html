@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+    <title>The Vegetable Battle</title>
+    <link rel="stylesheet" href="P6_02_CSS_file.css" />
+    <link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet"> 
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet"> 
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>  
+    <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script> 
+</head>
+<header style="background-color:	#daffcc">
+<div class="row" style="padding: 2em">
+    <h1 id="header" style="display: block; margin: auto; color: green">Welcome to The Vegetable Battle!</h1>
+</div>
+</header>
+<body style="background-color:	#daffcc">  
+<!--two Columns-->
+<div class="row" style="text-align: center">
+    <div class="col-12 col-lg-4">
+        <div class="card" style="border-width: 0px; background-color: #daffcc">
+            <div class="card-body">
+                <img class="card-img" style="width: 92%; border-radius: 12px;  border-style: ridge; border-width: 8px; text-align: center" src="images/veg_battle1.jpg" alt="battle">
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-lg-8">
+        <h3>The rules: </h3>
+        <ol style="text-align: left; font-size: 1.2em; padding-right: 2em">
+           <li>Each player plays in turn;</li>
+           <li>For each turn, a player can move from one to three boxes (horizontally or vertically) before ending their turn.</li>
+           <li>If a player passes over a box containing a weapon, they leave their current weapon on site and replace it with the new one.</li> 
+           <li>If players cross over adjacent squares (horizontally or vertically), a battle begins!</li> 
+           <li>The player can choose to attack or defend against the next shot.</li>
+            <li>The damage depends on the player's weapon:</li>
+            <ul>
+                <li>The <span style="font-weight: bold">default weapon</span> inflicts <span style="font-weight: bold">10</span> points of damage,</li>
+                <li>The <span style="font-weight: bold">corn</span> inflicts <span style="font-weight: bold">20</span> points of damage,</li>
+                <li>The <span style="font-weight: bold">cabbage</span> inflicts <span style="font-weight: bold">30</span> points of damage,</li>
+                <li>The <span style="font-weight: bold">onion</span> inflicts <span style="font-weight: bold">40</span> points of damage,</li>
+                <li>The <span style="font-weight: bold">tomato</span> inflicts <span style="font-weight: bold">50</span> points of damage;</li>
+            </ul>
+            <li>If the player chooses to defend themselves, they sustain 50% less damage than normal.</li>
+            <li>As soon as the life points of a player (initially 100) falls to 0, they lose.</li>
+        </ol>
+        <a href="P6_03_HTML_file.html">Start a game!</a>
+</div>  
+</body>
+</html>
